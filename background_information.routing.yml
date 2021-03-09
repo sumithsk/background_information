@@ -1,0 +1,8 @@
+page.json:
+  path: '/page_json/{api_key}/{nid}'
+  defaults:
+    _controller: '\Drupal\background_information\Controller\BackgroundInformationController::getPageJson'
+  methods: [ GET ]
+  requirements:
+    _permission: 'access content'
+    nid: ^[0-9]+

@@ -1,0 +1,6 @@
+name: Background Information
+type: module
+description: A drupal 8/9 module which provide site api key and page-json end point for the site.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

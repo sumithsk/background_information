@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Install, update & uninstall functions for the Background Information module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function background_information_uninstall() {
+  // Lets clear siteapikey from database on module uninstall.
+  \Drupal::configFactory()->getEditable('system.site')->clear('siteapikey')->save();
+}

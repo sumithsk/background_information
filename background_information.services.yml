@@ -1,0 +1,5 @@
+services:
+  background_information.route_subscriber:
+    class: Drupal\background_information\EventSubscriber\BackgroundInformationRouteSubscriber
+    tags:
+      - { name: event_subscriber }
